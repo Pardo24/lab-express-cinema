@@ -93,6 +93,11 @@ mongoose
   .then((response) => {
     console.log("conectados a la Dase de Datos");
 
+    return Movie.deleteMany();
+  })
+  .then((response) => {
+    console.log("conectados a la Dase de Datos");
+
     return Movie.insertMany(movies);
   })
   .then((response) => {

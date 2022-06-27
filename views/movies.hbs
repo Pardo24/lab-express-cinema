@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{{#each movies}}
-{{this.title}}
-{{this.image}}
-<button href="/movies/:{{id}}">See more</button>
+<h1>Peliculas</h1>
+{{#each response}}
+<h4>{{this.title}}</h4>
+<img src={{this.image}}/>
+<p><a href="/movies/{{this.id}}">See more</a></p>
 {{/each}}
